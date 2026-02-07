@@ -7,10 +7,10 @@ function App() {
   const handlePostRequest = async () => {
     setLoading(true);
     try {
-      const response = await fetch('https://www.experapps.xyz/rest/V1/mpapi/admin/sellers/4/product', {
-        method: 'POST', // Ensure the method matches your API requirement
+      const response = await fetch('/api/rest/V1/mpapi/admin/sellers/4/product', {
+        method: 'GET',
         headers: {
-          'Authorization': 'i3c179msh3zyik4943d2cepu3l0hxezg', // Replace with your actual token
+          'Authorization': 'Bearer i3c179msh3zyik4943d2cepu3l0hxezgexperapps2', // Replace with your actual token
           'Content-Type': 'application/json',
         }
       });

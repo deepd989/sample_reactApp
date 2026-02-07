@@ -6,6 +6,14 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 8081,
-    strictPort: true, // This ensures it fails if 8081 is already in use
+    strictPort: true,
+    proxy: {
+      '/api': {
+        target: 'https://www.experapps.xyz',
+        changeOrigin: true,
+        secure: false,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      }
+    }
   }
 })

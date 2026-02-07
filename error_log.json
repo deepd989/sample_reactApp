@@ -1,0 +1,20 @@
+[
+    {
+        "timestamp": "2026-02-07T10:38:42.821Z",
+        "context": "Seller ID: 5",
+        "status": 400,
+        "message": "Request failed with status code 400"
+    },
+    {
+        "timestamp": "2026-02-07T10:38:43.549Z",
+        "context": "Seller ID: 7",
+        "status": 400,
+        "message": "Request failed with status code 400"
+    },
+    {
+        "timestamp": "2026-02-07T10:38:43.753Z",
+        "context": "Seller ID: 7",
+        "status": 400,
+        "message": "Request failed with status code 400"
+    }
+]
